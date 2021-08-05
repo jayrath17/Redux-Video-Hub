@@ -1,3 +1,5 @@
 # Redux-Video-Hub
 Created with CodeSandbox
-LINK: https://csb-qefuo.netlify.app/
+
+
+LINK:https://qefuo.csb.app/
