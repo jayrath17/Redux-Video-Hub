@@ -19,10 +19,6 @@ const VideoPlayer = (props) => {
   let videoId = null;
   let videoSrc = null;
   if (videoDetail) {
-    console.log(videoDetail);
-    console.log(videoDetail.snippet.title);
-    console.log(videoDetail.snippet.description);
-    console.log(videoDetail.id.videoId);
     renderVideo = videoDetail.snippet.title;
     renderDescription = videoDetail.snippet.description;
     videoId = videoDetail.id.videoId;
