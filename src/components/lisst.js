@@ -4,19 +4,18 @@ import { connect, useDispatch } from "react-redux";
 const Lisst = (props) => {
   const dispatch = useDispatch();
   // styling for list item--------------------------------
+  
   const styleObj = {
     textAlign: "left",
     cursor: "pointer"
   };
   // -------------------------------------------------
-
-  console.log("props", props.arr);
+  
   const arr = props.arr;
   const renderItems = arr.map((items) => {
     return (
       <div
         onClick={() => {
-          console.log("cliccked", items);
           dispatch({ type: "videoClicked", videoDetail: items });
         }}
         key={items.id.videoId}
@@ -40,7 +39,6 @@ const Lisst = (props) => {
 };
 
 const mapStatestoProps = (state) => {
-  console.log("mappp", state);
   return {
     arr: state.nameReducer.songList
   };
