@@ -8,7 +8,6 @@ import VideoPlay from "./videoPlayer";
 import Lisst from ".//lisst";
 
 const App = (props) => {
-  // console.log("selectedVideo", props.selectedVideo);
   const dispatch = useDispatch();
 
   const handleSubmit = async (e) => {
@@ -19,7 +18,6 @@ const App = (props) => {
     console.log(response.data.items);
     dispatch({ type: "add_new_Music", arr: response.data.items });
     dispatch({ type: "videoSearched" });
-    // console.log(props, e.SearchSong, "submitted");
   };
   const logo = [
     "https://www.imore.com/sites/imore.com/files/styles/large/public/topic_images/2016/el-capitan-topic-logo.png?itok=k3U4WM7J",
@@ -50,7 +48,6 @@ const App = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  // console.log(state);
   return {
     selectedVideo: state.nameReducer.selectedVideo
   };
